@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>LUIZA FASHION</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 id="title">LUIZA FASHION</h1>
+      <p id="description">A loja que combina com você!</p>
+    </header>
+
+    <form class="form" id="survey-form">
+      <div>
+        <label for="name" class="form-label" id="name-label">Nome</label>
+        <input type="text" class="form-control" name="nome" id="name" placeholder="ex. Danilo Valério" required>
+      </div>
+
+      <div>
+        <label for="email" class="form-label" id="email-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="ex. ascendino@gmail.com" required>
+      </div>
+
+      <div>
+        <label for="number" class="form-label" id="number-label">Idade (Opcional)</label>
+        <input type="number" class="form-control form-number" name="idade" id="number" placeholder="ex. 20" min="0" max="150">
+      </div>
+
+      <div>
+        <label for="dropdown" class="form-label">Ocupação</label>
+        <select class="form-control form-select" name="gender" id="dropdown">
+          <option value="" disabled selected>Selecione a categoria que mais se adequa a você</option>
+          <option value="Estudante">Estudante</option>
+          <option value="Trabalho em tempo integral">Trabalho em tempo integral</option>
+          <option value="Desempregado">Desempregado</option>
+          <option value="Outro">Outro</option>
+        </select>
+
+        <p class="form-label">Você recomendaria a Luiza Fashion para um amigo?</p>
+
+        <div class="grid">
+          <label for="Com certeza">
+            <input type="radio" class="form-radio" name="radio" id="Com certeza" value="Com certeza">
+            <span>Com certeza</span>
+          </label>
+
+          <label for="nao">
+            <input type="radio" class="form-radio" name="radio" id="nao" value="nao" checked>
+            Não
+          </label>
+          <label for="Talvez">
+            <input type="radio" class="form-radio" name="radio" id="Talvez" value="Talvez">
+            Talvez
+          </label>
+        </div>
+      </div>
+      <div>
+
+        <label for="dropdown" class="form-label">O que você mais gosta na nossa loja?</label>
+        <select class="form-control form-select" name="gender" id="dropdown">
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="Atendimento">Atendimento</option>
+          <option value="Variedade de tamanhos">Variedade de tamanhos</option>
+          <option value="Preços">Preços</option>
+          <option value="Variedade em infantil, masculino, feminino, plus Size, moda fitness e moda praia">Variedade em infantil, masculino, feminino, plus Size, moda fitness e moda praia</option>
+
+        </select>
+
+        <p class="form-label">
+          O que você gostaria que fosse melhorado na loja? (Marque todas as opções aplicáveis)</p>
+
+        <div class="grid">
+          <label for="Variedade de marcas">
+            <input type="checkbox" class="form-checkbox" name="forum" id="forum" value="Variedade de marcas">
+            Variedade de marcas
+          </label>
+          <label for="Variedade de modelos">
+            <input type="checkbox" class="form-checkbox" name="Variedade de modelos" id="Variedade de modelos" value="Variedade de modelos">
+            Variedade de modelos
+          </label>
+          <label for="Atendimento">
+            <input type="checkbox" class="form-checkbox" name="Atendimento" id="Atendimento" value="Atendimento">
+            Atendimento
+          </label>
+          <label for="Atendimento online">
+            <input type="checkbox" class="form-checkbox" name="Atendimento online" id="Atendimento online" value="Atendimento online">
+            Atendimento online
+          </label>
+          <label for="Localização">
+            <input type="checkbox" class="form-checkbox" name="Localização" id="Localização" value="Localização">
+            Localização
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="Algum comentário ou sugestão?" class="form-label">Algum comentário ou sugestão?</label>
+        <textarea class="form-textarea" name="Algum comentário ou sugestão?" id="Algum comentário ou sugestão?" placeholder="Digite o seu comentário aqui..."></textarea>
+      </div>
+
+      <div>
+        <input type="submit" class="button" id="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

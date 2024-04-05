@@ -1,0 +1,122 @@
+:root {
+  font-size: 62.5%;
+  accent-color: hsl(0, 0%, 0%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url(https://scontent.fcpv12-1.fna.fbcdn.net/v/t1.6435-9/40122587_291390288314433_6559204188218195968_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-r4OWd-domoAX_vBnKu&_nc_ht=scontent.fcpv12-1.fna&oh=00_AfD-2HC9nvheavdC8tb6beDxEpADXQDuVQpVtLFRXf6_Bg&oe=662A5ED0);
+  background-size: cover;
+  font-family: sans-serif;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  position: relative; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.container {
+  width: min(90%, 50rem);
+  margin-inline: auto;
+  color: hsl(0, 0%, 100%); 
+}
+
+.grid {
+  display: grid;
+}
+
+.header {
+  margin-bottom: 3.2rem;
+  padding-top: 16rem;
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.form-control,
+.form-textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 97%);
+  box-shadow: inset 0 0 0 0.1rem hsl(0, 0%, 93%);
+  font: inherit;
+  padding: 0.8rem 1.2rem;
+}
+
+.form-textarea {
+  resize: none;
+  height: 14rem;
+}
+
+.form-select {
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1.6rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-number::-webkit-outer-spin-button,
+.form-number::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form-number {
+  appearance: textfield;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+label:not(.form-label) {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.button {
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  font: inherit;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
